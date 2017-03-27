@@ -11,7 +11,8 @@
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
     <!-- TODO #3 - Use the same list display from search.html -->
-        <table>
+    <span th:replace="search :: jobloop"></span>
+    <!--<table th:replace="search :: jobloop">
             <tr th:each="job, idx : ${jobs}">
                 <table class="job-listing">
                     <tr th:each="item, idx : ${job}">
@@ -20,7 +21,7 @@
                 </table>
 
             </tr>
-        </table>
+        </table>-->
     </div>
 
 </body>
